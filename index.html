@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perosnal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/52829efaee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <i class="fa-solid fa-registered" style="color: #e81a69;"></i> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" style="color: #e8234e;"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>UI/UX Designer</span></p>
+                <h1>Hi, I'm <span>Rohit</span></h1>
+            </div>
+        </div>
+        
+    </div>
+    <!-----------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="MINE.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Rohit Jangir, an MCA student embarking on a journey into the world of technology. Currently pursuing my Master's at JC Bose University Of Science and Technology, Faridabad, I bring fresh perspectives and a hunger for learning to the realm of front-end development. Proficient in HTML, CSS, and JavaScript, my academic projects showcase my dedication to creating visually appealing and user-friendly interfaces. As a newcomer, I am eager to delve into the challenges of the ever-evolving tech landscape, contribute my enthusiasm, and learn from every opportunity. Excited to kickstart my career, I look forward to exploring new horizons and making meaningful contributions to innovative projects.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Co-Curricular')">Co-Curricular/Achievements</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/Web Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Team Management</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li>Fresher<br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2022-24</span><br>MCA from JC Bose UST, FDB<br>70.3%</li>
+                        <li><span>2018-21</span><br>BCA from KUK<br>70.2%</li>
+                        <li><span>2017-18</span><br>12th from CBSE<br>74.6%</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Co-Curricular">
+                    <ul>
+                        <li><span>2019-22</span><br>Captain of the College Cricket Team</li>
+                        <li>Represented College in Tournaments</li>
+                        <li><span>May 2022</span><br>Supervisor of 90 Volunteers in 4th Khelo India Youth Games</li>
+                    </ul>
+                </div>
+            </div>
+
+        
+        </div>
+    </div>
+    <!--------------------------Skills--------------------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title"><br>My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p>Designing captivating and responsive web interfaces with strong front-end development skills.</p>
+                    <a href="https://www.w3schools.com/whatis/whatis_frontenddev.asp">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI Design</h2>
+                    <p>Crafting visually appealing interfaces for seamless and engaging user experiences.</p>
+                    <a href="https://www.coursera.org/in/articles/ui-design">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-people-group"></i>
+                    <h2>Team Player</h2>
+                    <p>Collaborative mindset, fostering unity, and contributing effectively within diverse teams.</p>
+                    
+                </div>
+             </div>
+        </div>
+    </div>
+    <!-------------Portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Work.jpg">
+                    <div class="layer">
+                        <h3>Book Shop Management System</h3>
+                        <p>Comprehensive online bookstore management: inventory tracking, order processing, and customer engagement for optimal efficiency.</p>
+                        <a href="#"><i class="fa-solid fa-link" style="color: #064330;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-1.jpg">
+                    <div class="layer">
+                        <h3>Crop Analysis</h3>
+                        <p>Innovative project predicts crop yield with precision, leveraging advanced analysis for optimized farming decisions and sustainability.</p>
+                        <a href="#"><i class="fa-solid fa-link" style="color: #09503b;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Simple portfolio showcasing work, skills, and about me, providing a clear snapshot of my abilities.</p>
+                        <a href="#"><i class="fa-solid fa-link" style="color: #0c4f3b;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+            
+        </div>
+    </div>
+    <!-----------contact--------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-at fa-beat" style="color: #3df2ff;"></i> rohitjangir42@gmail.com</p>
+                    <p><i class="fa-solid fa-phone" style="color: #74C0FC;"></i> +91-9754132459</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/rohit_jangir45"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rohit-jangir-b972b5158/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Rohit__Jangir.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Rohit. <br><i class="fa-solid fa-code"></i> by Rohit</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxW0cXHNLZNMuQ7wcPRBRLC8VujuRkRr8mIVNdNrcvH2aZO3qLrDk9LTcgjc1H3ZLu-tQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
